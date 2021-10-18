@@ -1,0 +1,146 @@
+[
+    {
+      "id": 1,
+      "title": "Eggs Benedict",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 8.99,
+      "img": "https://i.ibb.co/sPhfxhG/breakfast1.png",
+      "type": "Breakfast"
+    },
+    {
+      "id": 2,
+      "title": "Breakfast Sandwich",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 9.99,
+      "img": "https://i.ibb.co/52s5MsJ/breakfast2.png",
+      "type": "Breakfast"
+    },
+    {
+      "id": 3,
+      "title": "Baked Chiken",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 10.99,
+      "img": "https://i.ibb.co/nkz0dBC/breakfast3.png",
+      "type": "Breakfast"
+    },
+    {
+      "id": 4,
+      "title": "Bagel and cream cheese",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 23.99,
+      "img": "https://i.ibb.co/0VMkrLL/breakfast4.png",
+      "type": "Breakfast"
+    },
+    {
+      "id": 5,
+      "title": "Fried Egg Toast Brunch",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 3.99,
+      "img": "https://i.ibb.co/HzpqGRr/breakfast5.png",
+      "type": "Breakfast"
+    },
+    {
+      "id": 6,
+      "title": "Toast Croissant Fried Egg",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 19.99,
+      "img": "https://i.ibb.co/R2qm0qC/breakfast6.png",
+      "type": "Breakfast"
+    },
+    {
+      "id": 7,
+      "title": "Beef Steak",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 15.99,
+      "img": "./foods/lunch/lunch1.png",
+      "type": "Lunch"
+    },
+    {
+      "id": 8,
+      "title": "Honey with Peppers",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 7.99,
+      "img": "./foods/lunch/lunch2.png",
+      "type": "Lunch"
+    },
+    {
+      "id": 9,
+      "title": "Tarrgaon Rubbed Salmon",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 7.99,
+      "img": "./foods/lunch/lunch3.png",
+      "type": "Lunch"
+    },
+    {
+      "id": 10,
+      "title": "Indian Lunch",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 8.99,
+      "img": "./foods/lunch/lunch4.png",
+      "type": "Lunch"
+    },
+    {
+      "id": 11,
+      "title": "Fried Chicken Bento",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 13.99,
+      "img": "./foods/lunch/lunch5.png",
+      "type": "Lunch"
+    },
+    {
+      "id": 12,
+      "title": "healthy Meal Plan",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 83.99,
+      "img": "./foods/lunch/lunch6.png",
+      "type": "Lunch"
+    },
+    {
+      "id": 13,
+      "title": "Baked Chicken",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 66.99,
+      "img": "./foods/Dinner/dinner1.png",
+      "type": "Dinner"
+    },
+    {
+      "id": 14,
+      "title": "Lemony Salmaon Piccata",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 56.99,
+      "img": "./foods/Dinner/dinner2.png",
+      "type": "Dinner"
+    },
+    {
+      "id": 15,
+      "title": "Garlic Butter Baked Salmon",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 3.99,
+      "img": "./foods/Dinner/dinner3.png",
+      "type": "Dinner"
+    },
+    {
+      "id": 16,
+      "title": "French Fried with Cheese",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 23.99,
+      "img": "./foods/Dinner/dinner4.png",
+      "type": "Dinner"
+    },
+    {
+      "id": 17,
+      "title": "Pork Tenderion",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 12.99,
+      "img": "./foods/Dinner/dinner5.png",
+      "type": "Dinner"
+    },
+    {
+      "id": 18,
+      "title": "Lentil Salad",
+      "description": "The only think I like better than talking about Food is eating.",
+      "price": 9.99,
+      "img": "./foods/Dinner/dinner6.png",
+      "type": "Dinner"
+    }
+  ]
