@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import useServices from '../../../hooks/useServices';
 
 const Booking = () => {
-    const {servicesId, title} = useParams();
+    const {servicesId} = useParams();
     const [services] = useServices()
     const [details, setDetails] = useState([])
 

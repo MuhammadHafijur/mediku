@@ -5,7 +5,7 @@ import useAuth from "../../../hooks/useAuth";
 import sideImg from './sideImg.jpg'
 
 const Login = () => {
-  const {signInUsingGoogle, logOut} = useAuth();
+  const {signInUsingGoogle} = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [user, setUser] = useState({});
@@ -61,7 +61,7 @@ const Login = () => {
         setError("");
   })
   .catch((error) => {
-    const errorCode = error.code;
+    // const errorCode = error.code;
     const errorMessage = error.message;
     setError(errorMessage);
   });
