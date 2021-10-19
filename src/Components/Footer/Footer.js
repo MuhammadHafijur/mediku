@@ -5,7 +5,7 @@ import footerLogo from "./hospital.svg";
 const Footer = () => {
   return (
     <footer className="text-gray-600 body-font">
-      <div className="container px-5 py-24 bg-gray-400 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div className="container px-5 py-24 bg-blue-50 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div className="w-1/4 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <Link className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             <img src={footerLogo} alt="" />

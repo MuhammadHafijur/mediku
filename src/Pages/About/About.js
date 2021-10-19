@@ -1,26 +1,21 @@
 import React from "react";
-import about1 from './about1.jpg'
-import about2 from './about2.jpg'
-import about3 from './about3.jpg'
-import about4 from './about4.jpg'
 
 const About = () => {
   return (
     <div>
-      <div className="max-w-screen-xl p-4 bg-white dark:bg-gray-800 mx-auto px-4 sm:px-6 lg:px-8 relative py-26 lg:mt-20">
+      <h1 className="text-4xl font-medium text-center py-12 lg:mt-8">ABOUT US</h1>
+      <div className="max-w-screen-xl p-4 bg-white dark:bg-gray-800 mx-auto px-4 sm:px-6 lg:px-8 relative py-26 ">
         <div className="relative">
           <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="lg:col-start-2 lg:max-w-2xl ml-auto">
               <p className="text-base leading-6 text-indigo-500 font-semibold uppercase">
-                Interactive
+              INTRODUCING
               </p>
               <h4 className="mt-2 text-2xl leading-8 font-extrabold text-gray-900 dark:text-white sm:text-3xl sm:leading-9">
-                Interactivity between team members is the key of the success.
+              Mediku Special Features
               </h4>
               <p className="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
-                Build a simply and powered collaborative space for all your
-                team. Track, share, measure, you have a fully control, it&#x27;s
-                never be simply and efficient.
+              We offer extensive medical procedures to outbound and inbound patients what it is and we are very proud of achievement of our staff, We are all work together to help our all patients for recovery
               </p>
               <ul className="mt-8 md:grid md:grid-cols-2 gap-6">
                 <li className="mt-6 lg:mt-0">
@@ -39,7 +34,7 @@ const About = () => {
                       </svg>
                     </span>
                     <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                      Live modifications
+                    Osteopaths
                     </span>
                   </div>
                 </li>
@@ -59,7 +54,7 @@ const About = () => {
                       </svg>
                     </span>
                     <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                      Data tracker
+                      Oral Care
                     </span>
                   </div>
                 </li>
@@ -79,7 +74,7 @@ const About = () => {
                       </svg>
                     </span>
                     <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                      24/24 support
+                      24/24 helpline
                     </span>
                   </div>
                 </li>
@@ -99,7 +94,7 @@ const About = () => {
                       </svg>
                     </span>
                     <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                      Free tips to improve work time
+                      Free consultant for you health
                     </span>
                   </div>
                 </li>
@@ -111,13 +106,13 @@ const About = () => {
                   <img
                     className="rounded-lg shadow-lg w-32 md:w-56"
                     width="200"
-                    src={about3}
+                    src="https://i.ibb.co/MRGNDGp/about3.png"
                     alt="1"
                   />
                   <img
                     className="rounded-lg shadow-lg w-40 md:w-64"
                     width="260"
-                    src={about2}
+                    src="https://i.ibb.co/NKJw499/about2.png"
                     alt="2"
                   />
                 </div>
@@ -125,13 +120,13 @@ const About = () => {
                   <img
                     className="rounded-lg shadow-lg w-24 md:w-40"
                     width="170"
-                    src={about4}
+                    src="https://i.ibb.co/NYShDrC/about4.png"
                     alt="3"
                   />
                   <img
                     className="rounded-lg shadow-lg w-32 md:w-56"
                     width="200"
-                    src={about1}
+                    src="https://i.ibb.co/f0QDjFD/about1.png"
                     alt="4"
                   />
                 </div>

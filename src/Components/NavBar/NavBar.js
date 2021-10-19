@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import logo from './hospital.png'
 
 const NavBar = () => {
+    const {user, logOut} = useAuth();
     return (
         <div>
             <header className="text-gray-600 body-font">
@@ -16,12 +18,21 @@ const NavBar = () => {
       <Link to='/about' className="mr-5 hover:text-gray-900">About</Link>
       <Link to='/services' className="mr-5 hover:text-gray-900">Services</Link>
       <Link to='/contact' className="mr-5 hover:text-gray-900">Contact</Link>
+      <p className="mr-5 hover:text-gray-900">Signed in as: {user?.displayName}</p>
     </nav>
-    <Link to='/login' className="md:mr-3 inline-flex items-center font-semibold bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">LOGIN
+    {user?.email ?
+      <Link onClick={logOut} to='/login' className="md:mr-3 inline-flex items-center font-semibold bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">LOGOUT
       <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
-    </Link>
+    </Link> : 
+    <Link to='/login' className="md:mr-3 inline-flex items-center font-semibold bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">LOGIN
+    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+      <path d="M5 12h14M12 5l7 7-7 7"></path>
+    </svg>
+  </Link>
+    }
+
     <Link to='/register' className="inline-flex items-center font-semibold bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">REGISTER
       <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>

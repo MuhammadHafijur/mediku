@@ -1,0 +1,7 @@
+.banner{
+    background-image: url(./slider-bg-1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+}
