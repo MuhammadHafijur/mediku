@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import useServices from "../../hooks/useServices";
 import Service from "../Service/Service";
 

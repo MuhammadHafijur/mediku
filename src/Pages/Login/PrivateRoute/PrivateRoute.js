@@ -5,7 +5,7 @@ import useAuth from '../../../hooks/useAuth';
 const PrivateRoute = ({ children, ...rest }) => {
     const {user, isLoading} = useAuth();
     if(isLoading){
-        return <div class="mx-auto md:animate-spin w-12 h-12 border-8 border-t-2 border-gray-600 rounded-full loader"></div>
+        return <div className="mx-auto md:animate-spin w-12 h-12 border-8 border-t-2 border-gray-600 rounded-full loader"></div>
     }
     return (
         <Route

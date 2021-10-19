@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../../Components/Footer/Footer';
+import Doctors from '../../Components/Doctors/Doctors';
 import Header from '../../Components/Header/Header';
 import About from '../About/About';
 import Services from '../Services/Services';
@@ -10,6 +10,7 @@ const Home = () => {
             <Header></Header>
             <About></About>
             <Services></Services>
+            <Doctors></Doctors>
         </div>
     );
 };
