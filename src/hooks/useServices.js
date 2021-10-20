@@ -5,7 +5,7 @@ const useServices = () => {
     const [services, setServices] = useState([])
 
   useEffect(() => {
-    fetch('./service.json')
+    fetch('/service.json')
     .then(res => res.json())
     .then(data => setServices(data))
   }, [])

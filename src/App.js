@@ -13,6 +13,7 @@ import Login from "./Pages/Login/Login/Login";
 import AuthProvider from "./Context/AuthProvider";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import Footer from "./Components/Footer/Footer";
+import Faq from "./Pages/Faq/Faq";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
             <PrivateRoute path="/services">
               <Services></Services>
             </PrivateRoute>
+            <Route path="/faq">
+              <Faq></Faq>
+            </Route>
             <Route path="/contact">
               <Contact></Contact>
             </Route>

@@ -5,15 +5,16 @@ import initializeAuthentication from "../Pages/Login/Firebase/firebase.init";
 initializeAuthentication()
 
 const useFirebase = () => {
+    const auth = getAuth();
+    const googleProvider = new GoogleAuthProvider();
+
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true)
     const [name, setName] = useState("");
 
-    const auth = getAuth();
-
     const signInUsingGoogle = () => {
         setIsLoading(true);
-        const googleProvider = new GoogleAuthProvider();
+        
 
         return signInWithPopup(auth, googleProvider)
         

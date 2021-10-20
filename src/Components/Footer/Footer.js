@@ -12,7 +12,7 @@ const Footer = () => {
             <span className="ml-3 text-xl">Mediku.</span>
           </Link>
           <p className="mt-2 text-sm text-gray-500">
-            Air plant banjo lyft occupy retro adaptogen indego
+            Take care of your Health
           </p>
         </div>
         <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">

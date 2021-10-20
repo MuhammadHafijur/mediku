@@ -5,7 +5,9 @@ import useAuth from "../../../hooks/useAuth";
 import sideImg from './sideImg.jpg'
 
 const Login = () => {
-  const {signInUsingGoogle} = useAuth();
+  const {createUser} = useAuth()
+
+  const {signInUsingGoogle, auth} = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [user, setUser] = useState({});
@@ -24,7 +26,7 @@ const Login = () => {
   })
   }
 
-  const auth = getAuth();
+  // const auth = getAuth();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -44,19 +46,40 @@ const Login = () => {
   
 
 
-  const handleLogin = () => {
-    signInWithEmailAndPassword(auth, email, password)
-  .then((result) => {
+  // const handleLogin = (e) => {
+  //   e.preventDefault();
+  //   signInWithEmailAndPassword(auth, email, password)
+  // .then((result) => {
 
-    const {email, displayName, photoURL} = result.user;
-        const userInfo = {
-          name: displayName,
-          email: email,
-          photo: photoURL
-        };
-        setUser(userInfo)
-        setError("");
-  })
+  //   const {email, displayName, photoURL} = result.user;
+  //       const userInfo = {
+  //         name: displayName,
+  //         email: email,
+  //         photo: photoURL
+  //       };
+  //       setUser(userInfo)
+  //       setError("");
+  // })
+  // .catch((error) => {
+  //   // const errorCode = error.code;
+  //   const errorMessage = error.message;
+  //   setError(errorMessage);
+  // });
+  // }
+
+  //test
+  const handleLogin = (e) => {
+    e.preventDefault();
+    createUser(email, password)
+        .then(result => {
+            console.log('hellow');
+            const user = result.user;
+            setUser(user)
+            history.push(redirect_uri)
+        }).catch(error => {
+            console.log(error.message);
+            setError(error.message)
+        })
   .catch((error) => {
     // const errorCode = error.code;
     const errorMessage = error.message;
@@ -66,7 +89,7 @@ const Login = () => {
 
   return (
     <div className="flex flex-wrap w-ful my-24">
-      <h1>{user.email}</h1>
+      {/* <h1>{user.email}</h1> */}
       <div className="flex flex-col w-full md:w-1/2">
         <div className="flex justify-center pt-12 md:justify-start md:pl-12 md:-mb-24">
           <Link to="/home" className="p-4 text-xl font-bold text-white bg-black">
