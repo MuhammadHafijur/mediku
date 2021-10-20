@@ -58,6 +58,7 @@ const Login = () => {
         const user = result.user
         setUser(user)
         alert("done")
+        history.push(redirect_uri)
     }).catch(error => {
         setError(error.message)
     })
